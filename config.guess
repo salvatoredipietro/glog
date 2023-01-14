@@ -833,8 +833,11 @@ EOF
 	echo ${UNAME_MACHINE}-pc-minix
 	exit ;;
     arm*:Linux:*:*)
-	echo ${UNAME_MACHINE}-unknown-linux-gnu
-	exit ;;
+  echo ${UNAME_MACHINE}-unknown-linux-gnu
+  exit ;;
+    aarch64:Linux:*:*)
+  echo ${UNAME_MACHINE}-unknown-linux-gnu
+  exit ;;
     avr32*:Linux:*:*)
 	echo ${UNAME_MACHINE}-unknown-linux-gnu
 	exit ;;
