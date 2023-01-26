@@ -225,7 +225,7 @@ static bool ParseTwoCharToken(State *state, const char *two_char_token) {
 static bool ParseCharClass(State *state, const char *char_class) {
   const char *p = char_class;
   for (; *p != '\0'; ++p) {
-    if (state->mangled_cur[0] == *p) {
+    if (*(state->mangled_cur) == '\0') {
       ++state->mangled_cur;
       return true;
     }
